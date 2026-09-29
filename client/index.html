@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Connectly - Social Media Platform</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><a class="logo" href="/">Connectly</a><nav id="nav"></nav></header>
+<main class="container">
+<section class="hero"><div><span>CODEALPHA TASK 2</span><h1>Social Media Platform</h1><p>Connect, share, follow and communicate.</p></div><button id="newPostBtn">Create Post</button></section>
+<section id="authPanel" class="card auth">
+<h2>Welcome to Connectly</h2><p>Create an account or login to use the social features.</p>
+<a href="register.html" class="btn">Register</a> <a href="login.html" class="btn secondary">Login</a>
+</section>
+<section id="composer" class="card hidden"><h2>Create a Post</h2><textarea id="postContent" placeholder="What's on your mind?"></textarea><button class="btn" onclick="createPost()">Publish</button></section>
+<section><div class="sectionHead"><h2>Latest Posts</h2><button class="secondary btn" onclick="loadPosts()">Refresh</button></div><div id="posts"></div></section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
